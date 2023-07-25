@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- DaisyUI & Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                    clifford: '#da373d',
+                    'title_color': '#1C1C1C',
+                    'descrip_color': '#777',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom classes -->
+    <style>
+        .manrape_font {
+            font-family: 'Manrope', sans-serif;
+        }
+        .gradient_color {
+          background: linear-gradient(90deg, #FF8938, #F00);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Part -->
+    <header class="py-16 px-1 md:px-0">
+        <div class="container mx-auto">
+            <div>
+                <div class="grid md:grid-cols-2 justify-between">
+                  <div class="text-center md:text-start">
+                    <h1 class="text-4xl md:text-7xl manrape_font text-title_color font-extrabold">It's good <br>tea time at The <br>Tea House</h1>
+                    <p class="py-7 text-descrip_color text-base md:text-xl font-medium">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
+                    <button class="btn text-white gradient_color">Explore More <ion-icon class="-rotate-45" name="arrow-forward"></ion-icon></button>
+                  </div>
+                  <div class="justify-self-end">
+                    <img src="./assets/images/banner.png" class="max-w-full"/>
+                    <div class="-mt-14 p-5 shadow-lg w-60 flex gap-3 items-center bg-red-200">
+                        <ion-icon class="text-4xl text-amber-400" name="star"></ion-icon>
+                        <div>
+                            <h4 class="text-title_color text-3xl manrape_font font-extrabold">5.00</h4>
+                            <p class="text-descrip_color text-base manrape_font font-semibold">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Feature Product -->
+        <section class="px-1 md:px-0">
+            <div class="container mx-auto">
+                <h3 class="manrape_font text-title_color text-2xl md:text-5xl font-extrabold text-center mb-5">
+                  Our Featured Products
+                </h3>
+                <p class="manrape_font text-descrip_color text-sm md:text-base font-medium max-w-4xl text-center mb-14 mx-auto">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- card 1 -->
+                    <div class="card px-7 bg-[#F7F7F7]">
+                        <figure class="px-10 pt-10">
+                          <img src="./assets/images/tea-1.png" alt="tea" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-xl md:text-2xl font-extrabold text-title_color capitalize">milk tea</h2>
+                          <p class="text-base font-semibold text-descrip_color manrape_font">Creamer could be replaced by fresh milk</p>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card px-7 bg-[#F7F7F7]">
+                        <figure class="px-10 pt-10">
+                          <img src="./assets/images/tea-2.png" alt="tea" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-xl md:text-2xl font-extrabold text-title_color capitalize">black tea</h2>
+                          <p class="text-base font-semibold text-descrip_color manrape_font">Creamer could be replaced by fresh milk</p>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card px-7 bg-[#F7F7F7]">
+                        <figure class="px-10 pt-10">
+                          <img src="./assets/images/tea-3.png" alt="tea" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-xl md:text-2xl font-extrabold text-title_color capitalize">lemon tea</h2>
+                          <p class="text-base font-semibold text-descrip_color manrape_font">Creamer could be replaced by fresh milk</p>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="card px-7 bg-[#F7F7F7]">
+                        <figure class="px-10 pt-10">
+                          <img src="./assets/images/tea-4.png" alt="tea" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-xl md:text-2xl font-extrabold text-title_color capitalize">green tea</h2>
+                          <p class="text-base font-semibold text-descrip_color manrape_font">Creamer could be replaced by fresh milk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- great tea fresh presented -->
+        <section class="px-1 md:px-0 my-32">
+          <div class="container mx-auto flex gap-12 flex-col md:flex-row">
+            <div class="flex-1 grid gap-5 grid-cols-2">
+              <div class="h-36 bg-gradient-to-r from-[#F00] to-[#FF8938] opacity-10 rounded-xl"></div>
+              <div class="row-span-2 bg-[#F3EDE0] rounded-lg px-5 py-8 flex justify-center items-center">
+                <img src="./assets/images/fresh-1.png" alt="">
+              </div>
+              <div class="row-span-2 bg-[#E5E8E2] rounded-lg px-5 py-8 flex justify-center items-center">
+                <img src="./assets/images/fresh-2.png" alt="">
+              </div>
+              <div class="h-36 bg-gradient-to-r from-[#F00] to-[#FF8938] opacity-10 rounded-xl"></div>
+            </div>
+            <div class="flex-1">
+              <h3 class="manrape_font text-2xl md:text-5xl text-title_color font-extrabold">
+                Great Tea, Freshly Presented
+              </h3>
+              <p class="text-sm md:text-base font-medium manrape_font text-descrip_color py-7">
+                The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.
+              </p>
+              <h4 class="manrape_font font-extrabold text-title_color text-xl pb-3">
+                Unique Taste
+              </h4>
+              <p class="text-sm md:text-base font-medium manrape_font text-descrip_color pb-5">
+                A Unique and different style from other teapots gives a luxurious and minimalist impression
+              </p>
+              <h4 class="manrape_font font-extrabold text-title_color text-xl pb-3">
+                Premium Quality
+              </h4>
+              <p class="text-sm md:text-base font-medium manrape_font text-descrip_color">
+                Premium Quality that makes tea more elegant and more durable when you use it.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Super clients -->
+        <section class="px-1 md:px-0">
+          <div class="container mx-auto gradient_color py-24 px-1 md:px-8 lg:px-16 flex flex-col lg:flex-row gap-14 lg:gap-44">
+            <div class="flex-1 flex items-center">
+              <div>
+                <h3 class="manrape_font text-3xl md:text-5xl text-[#F4F4F4] font-extrabold">
+                  Meet Our Super Clients
+                </h3>
+                <p class="manrape_font font-medium text-sm md:text-base text-[#F4F4F4] mt-5 mb-7">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+                 <button class="btn capitalize text-[#FF3014] bg-white hover:bg-white">show all</button>
+              </div>
+            </div>
+            <div class="flex-1 grid gap-20 relative">
+              <!-- client 1 -->
+              <div class="relative bg-white p-10 opacity-30 z-0 max-w-[430px]">
+                <img class="absolute -left-6 -top-6 border-8 rounded-full bg-white border-white" src="./assets/images/client.png" alt="">
+                <p class="manrape_font text-sm md:text-base font-normal text-descrip_color my-6">
+                  We are providing the best and suitable home insurance services for the people who are interested to treatment
+                </p>
+                <h5 class="manrape_font text-base text-title_color font-extrabold mb-2">
+                  Ilham Yuda
+                </h5>
+                <div class="flex justify-between">
+                  <p class="manrape_font text-base font-medium text-[#5D5A6F]">
+                    Businessman
+                  </p>
+                  <img src="./assets/images/circles.png" alt="">
+                </div>
+              </div>
+              <!-- client 2 -->
+              <div class="absolute top-44 left-6 lg:-left-20 bg-white z-10 p-10 max-w-[430px]">
+                <img class="absolute -left-6 -top-6 border-8 rounded-full bg-white border-white" src="./assets/images/client.png" alt="">
+                <p class="manrape_font text-sm md:text-base font-normal text-descrip_color my-6">
+                  We are providing the best and suitable home insurance services for the people who are interested to treatment
+                </p>
+                <h5 class="manrape_font text-base text-title_color font-extrabold mb-2">
+                  Ilham Yuda
+                </h5>
+                <div class="flex justify-between">
+                  <p class="manrape_font text-base font-medium text-[#5D5A6F]">
+                    Businessman
+                  </p>
+                  <img src="./assets/images/circles.png" alt="">
+                </div>
+              </div>
+              <!-- client 3 -->
+              <div class="relative bg-white p-10 opacity-30 z-0 max-w-[430px]">
+                <img class="absolute -left-6 -top-6 border-8 rounded-full bg-white border-white" src="./assets/images/client.png" alt="">
+                <p class="manrape_font text-sm md:text-base font-normal text-descrip_color my-6">
+                  We are providing the best and suitable home insurance services for the people who are interested to treatment
+                </p>
+                <h5 class="manrape_font text-base text-title_color font-extrabold mb-2">
+                  Ilham Yuda
+                </h5>
+                <div class="flex justify-between">
+                  <p class="manrape_font text-base font-medium text-[#5D5A6F]">
+                    Businessman
+                  </p>
+                  <img src="./assets/images/circles.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- News & Event -->
+        <section class="px-1 md:px-0 my-32">
+          <div class="container mx-auto">
+            <h3 class="manrape_font text-title_color text-2xl md:text-5xl font-extrabold text-center mb-5">
+              News & Events
+            </h3>
+            <p class="manrape_font text-descrip_color text-sm md:text-base font-medium max-w-4xl text-center mb-14 mx-auto">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <!-- Card 1 -->
+              <div class="card py-6 px-4 border">
+                <figure><img class="w-full mb-5" src="./assets/images/news-1.png" alt="News" /></figure>
+                <div>
+                  <small class="text-base manrape_font font-medium text-descrip_color">Feb 05, 2027</small>
+                  <h2 class="font-extrabold text-xl text-title_color manrape_font mt-3">Collecting 8 points for discount</h2>
+                  <p class="manrape_font font-medium text-descrip_color text-base mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                  <a href="#" class="manrape_font font-bold text-title_color text-base">Learn More</a>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card py-6 px-4 border">
+                <figure><img  class="w-full mb-5" src="./assets/images/news-2.png" alt="News" /></figure>
+                <div>
+                  <small class="text-base manrape_font font-medium text-descrip_color">Feb 05, 2027</small>
+                  <h2 class="font-extrabold text-xl text-title_color manrape_font mt-3">Collecting 8 points for discount</h2>
+                  <p class="manrape_font font-medium text-descrip_color text-base mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                  <a href="#" class="manrape_font font-bold text-title_color text-base">Learn More</a>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="card py-6 px-4 border">
+                <figure><img  class="w-full mb-5" src="./assets/images/news-3.png" alt="News" /></figure>
+                <div>
+                  <small class="text-base manrape_font font-medium text-descrip_color">Feb 05, 2027</small>
+                  <h2 class="font-extrabold text-xl text-title_color manrape_font mt-3">Collecting 8 points for discount</h2>
+                  <p class="manrape_font font-medium text-descrip_color text-base mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                  <a href="#" class="manrape_font font-bold text-title_color text-base">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <!-- Footer part -->
+    <footer class="footer px-1 md:px-0 bg-[#FFEEE9]">
+      <div class="container mx-auto py-10 md:py-20 lg:py-32">
+        <div class="w-full mb-24 flex justify-between">
+          <img src="./assets/images/cup.png" alt="">
+          <div class="flex flex-col md:flex-row items-center gap-2 md:gap-10">
+            <p class="text-xl font-medium manrape_font text-[#494949]">
+              Ready to get strated?
+            </p>
+            <button class="btn text-white gradient_color capitalize manrape_font">get started</button>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-5 gap-y-14">
+          <!-- 1 -->
+          <div>
+            <h4 class="text-xl text-title_color font-semibold manrape_font mb-5">
+              Quick Links
+            </h4>
+            <ul class="space-y-4 text-sm md:text-base text-[#494949] manrape_font">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Insurance</a></li>
+              <li><a href="#">Privacy Policys</a></li>
+            </ul>
+          </div>
+          <!-- 2 -->
+          <div>
+            <h4 class="text-xl text-title_color font-semibold manrape_font mb-5">
+              Our Service
+            </h4>
+            <ul class="space-y-4 text-sm md:text-base text-[#494949] manrape_font">
+              <li><a href="#">Life Insurance</a></li>
+              <li><a href="#">Car Insurance</a></li>
+              <li><a href="#">Health Insurance</a></li>
+              <li><a href="#">House Insurance</a></li>
+            </ul>
+          </div>
+          <!-- 3 -->
+          <div>
+            <h4 class="text-xl text-title_color font-semibold manrape_font mb-5">
+              Help
+            </h4>
+            <ul class="space-y-4 text-sm md:text-base text-[#494949] manrape_font">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- 4 -->
+          <div>
+            <h4 class="text-xl text-title_color font-semibold manrape_font mb-5">
+              Subscribe to our newsletter
+            </h4>
+            <div class="flex justify-between items-center">
+              <input class="focus:outline-none w-10/12 py-3 bg-transparent border-b-2 border-[#494949]" type="email" name="email" id="" placeholder="Email adress">
+              <button class="w-6 md:w-9 h-7 md:h-10 text-white gradient_color rounded-full"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+            </div>
+            <ul class="flex space-x-5 mt-10 text-sm md:text-base text-[#494949] manrape_font">
+              <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full">
+          <p class="mt-14 text-center text-sm md:text-base font-medium manrape_font text-[#494949]">&copy; 2027 UIDesign.to - All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
